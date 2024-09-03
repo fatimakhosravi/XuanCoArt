@@ -9,7 +9,7 @@ export const NavbarData: NavbarType[] = [
     href: "/recent-",
   },
   {
-    link_name: "Bread",
+    link_name: "All Breads",
     href: "/",
   },
   {

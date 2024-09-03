@@ -1,33 +1,62 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import HeroSecImg from "@/../public/jpg/hero-sec.jpg";
-import SwiperPagination from "../Common/SwiperPagination";
+import Link from "next/link";
+import { SwiperData } from "./HomeData";
+import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
+import { useState } from "react";
+
 const HeroSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const showPrevImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? SwiperData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % SwiperData.length);
+  };
+  const currentData = SwiperData[currentIndex];
   return (
-    <div className=" ">
-      <div className="flex flex-row items-center justify-center gap-4">
-        <div className="w-full flex">
-          <Image
-            className="w-[100%] rounded-xl"
-            alt="hero-sec-img"
-            src={HeroSecImg}
-          />
+    <div className="flex flex-row gap-4 w-full">
+      <div className="w-[100%] flex">
+        <Image
+          src={currentData.src}
+          className="w-[100%] rounded-xl"
+          alt="hero-sec-img"
+        />
+      </div>
+
+      <div className="flex flex-col justify-between gap-4">
+        <h1 className="font-bold text-9xl">{currentData.title}</h1>
+
+        <div className="flex flex-col justify-center w-full gap-4">
+          <p className="font-bold text-xl">{currentData.subtitle}</p>
+          <Link
+            href={currentData.link.href}
+            className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl flex justify-center items-center"
+          >
+            {currentData.link.text}
+          </Link>
         </div>
-        <div>
-          <div className="flex flex-col justify-center w-full gap-4">
-            <p className="font-bold text-xl">
-              Let’s make the easiest coffee ice cream! It’s creamy and
-              scoopable, made with roasty-toasy coffee and a mega amount of
-              crumbled chocolate cookies. This is the dessert of summer that
-              also sometimes doubles as dinner. Just here to introduce you to
-              your newest kitchen superpower: ice cream without an ice cream
-              maker. Really, this should…
-            </p>
-            <button className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl">
-              Read More
-            </button>
-          </div>
-          <SwiperPagination />
+
+        <div className="flex flex-row justify-end gap-4 w-full">
+          <button
+            onClick={showPrevImage}
+            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#38342d] bg-[#ebdbbe] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl w-[10%] prev-swipe "
+          >
+            <ArrowLeft2 variant="Bold" size="24" color="#000000" />
+            Prev
+          </button>
+          <button
+            onClick={handleNext}
+            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#ebdbbe] bg-[#38342d]  hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl w-[10%] next-swipe'"
+          >
+            Next
+            <ArrowRight2 variant="Bold" size="24" color="#000000" />
+          </button>
         </div>
       </div>
     </div>
