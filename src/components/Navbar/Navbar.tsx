@@ -2,7 +2,7 @@ import React from "react";
 import { NavbarData } from "./NavbarData";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/../public/jpg/bread-farm-logo.jpg";
+import Logo from "@/../public/jpg/common/bread-farm-logo.jpg";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,10 @@ const Navbar = () => {
             className="flex flex-row items-center justify-center"
             key={index}
           >
-            <Link className="text-xl font-bold hover:text-[#ebc070]" href={item.href}>
+            <Link
+              className="text-xl font-bold hover:text-[#ebc070]"
+              href={item.href}
+            >
               {item.link_name}
             </Link>
           </div>

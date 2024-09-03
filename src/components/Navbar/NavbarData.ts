@@ -1,9 +1,9 @@
-interface NavbarType {
+interface NavbarDataType {
   link_name: string;
   href: string;
 }
 
-export const NavbarData: NavbarType[] = [
+export const NavbarData: NavbarDataType[] = [
   {
     link_name: "Recent Post",
     href: "/recent-",

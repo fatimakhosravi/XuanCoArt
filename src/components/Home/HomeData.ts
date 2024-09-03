@@ -1,9 +1,9 @@
 // SwiperData Sec
-import FirstImg from "@/../public/jpg/fist-img.jpg";
-import SecondImg from "@/../public/jpg/second-img.jpg";
-import ThirdImg from "@/../public/jpg/third-img.jpg";
-import FourthImg from "@/../public/jpg/fourth-img.jpg";
-import FifthImg from "@/../public/jpg/fifth-img.jpg";
+import FirstImg from "@/../public/jpg/hero-sec/fist-img.jpg";
+import SecondImg from "@/../public/jpg/hero-sec/second-img.jpg";
+import ThirdImg from "@/../public/jpg/hero-sec/third-img.jpg";
+import FourthImg from "@/../public/jpg/hero-sec/fourth-img.jpg";
+import FifthImg from "@/../public/jpg/hero-sec/fifth-img.jpg";
 import { StaticImageData } from "next/image";
 
 // BlogSectionData Sec
