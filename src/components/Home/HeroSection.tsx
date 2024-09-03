@@ -20,17 +20,17 @@ const HeroSection = () => {
   };
   const currentData = SwiperData[currentIndex];
   return (
-    <div className="flex flex-row gap-4 w-full">
+    <div className="grid grid-cols-2 gap-4 w-full">
       <div className="w-[100%] flex">
         <Image
           src={currentData.src}
-          className="w-[100%] rounded-xl"
+          className="w-[100%] rounded-xl h-[100%]"
           alt="hero-sec-img"
         />
       </div>
 
-      <div className="flex flex-col justify-between gap-4">
-        <h1 className="font-bold text-9xl">{currentData.title}</h1>
+      <div className="grid grid-rows-3 justify-center items-center">
+        <h1 className="font-bold text-7xl">{currentData.title}</h1>
 
         <div className="flex flex-col justify-center w-full gap-4">
           <p className="font-bold text-xl">{currentData.subtitle}</p>
@@ -42,17 +42,17 @@ const HeroSection = () => {
           </Link>
         </div>
 
-        <div className="flex flex-row justify-end gap-4 w-full">
+        <div className="grid grid-cols-2 justify-end gap-4 w-full">
           <button
             onClick={showPrevImage}
-            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#38342d] bg-[#ebdbbe] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl w-[10%] prev-swipe "
+            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#38342d] bg-[#ebdbbe] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl prev-swipe"
           >
             <ArrowLeft2 variant="Bold" size="24" color="#000000" />
             Prev
           </button>
           <button
             onClick={handleNext}
-            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#ebdbbe] bg-[#38342d]  hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl w-[10%] next-swipe'"
+            className="flex flex-row items-center justify-center gap-2 grad bg-gradient-to-r from-[#ebdbbe] bg-[#38342d]  hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl next-swipe'"
           >
             Next
             <ArrowRight2 variant="Bold" size="24" color="#000000" />

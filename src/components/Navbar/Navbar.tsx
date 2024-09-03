@@ -7,7 +7,7 @@ import Logo from "@/../public/jpg/common/bread-farm-logo.jpg";
 const Navbar = () => {
   return (
     <div className="py-6 ">
-      <div className="flex flex-row justify-center gap-4 grad bg-gradient-to-r from-[#ebdbbe] p-4 rounded-xl w-full shadow-md shadow-[#70695c]">
+      <div className="flex flex-row justify-center gap-4 grad bg-gradient-to-r from-[#e9cf7c] bg-[#eee2ba] p-4 rounded-xl w-full shadow-md shadow-[#70695c]">
         <Image className="w-24 rounded-md" alt="logo" src={Logo} />
         {NavbarData.map((item, index) => (
           <div
@@ -15,7 +15,7 @@ const Navbar = () => {
             key={index}
           >
             <Link
-              className="text-xl font-bold hover:text-[#ebc070]"
+              className="text-xl font-bold hover:text-[#0818A8] text-black"
               href={item.href}
             >
               {item.link_name}
