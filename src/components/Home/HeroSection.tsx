@@ -35,6 +35,7 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center w-full gap-4">
           <p className="font-bold text-xl">{currentData.subtitle}</p>
           <Link
+            target="_blank"
             href={currentData.link.href}
             className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-xl font-bold text-black h-16 rounded-xl flex justify-center items-center"
           >

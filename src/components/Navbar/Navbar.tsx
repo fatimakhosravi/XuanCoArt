@@ -15,6 +15,7 @@ const Navbar = () => {
             key={index}
           >
             <Link
+              target="_blank"
               className="text-xl font-bold hover:text-[#0818A8] text-black"
               href={item.href}
             >

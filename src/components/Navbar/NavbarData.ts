@@ -6,22 +6,22 @@ interface NavbarDataType {
 export const NavbarData: NavbarDataType[] = [
   {
     link_name: "Recent Post",
-    href: "/recent-",
+    href: "/recent-posts",
   },
   {
     link_name: "All Breads",
-    href: "/",
+    href: "/products",
   },
   {
     link_name: "All Recipes",
-    href: "/",
+    href: "/products-recipes",
   },
   {
     link_name: "Contact Us",
-    href: "/",
+    href: "/contact-us",
   },
   {
     link_name: "Blog",
-    href: "/",
+    href: "/blog",
   },
 ];

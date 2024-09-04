@@ -48,6 +48,7 @@ const AboutSection = () => {
             lasting impact.
           </p>
           <Link
+            target="_blank"
             href="/contact-us"
             className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-base font-bold text-black h-16 rounded-xl flex justify-center items-center w-full"
           >

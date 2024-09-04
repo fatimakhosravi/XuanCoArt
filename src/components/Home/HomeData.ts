@@ -1,4 +1,4 @@
-// SwiperData Sec
+// SwiperData import Sec
 import FirstImg from "@/../public/jpg/hero-sec/fist-img.jpg";
 import SecondImg from "@/../public/jpg/hero-sec/second-img.jpg";
 import ThirdImg from "@/../public/jpg/hero-sec/third-img.jpg";
@@ -6,12 +6,13 @@ import FourthImg from "@/../public/jpg/hero-sec/fourth-img.jpg";
 import FifthImg from "@/../public/jpg/hero-sec/fifth-img.jpg";
 import { StaticImageData } from "next/image";
 
-// BlogSectionData Sec
-import FirstBlog from "@/../public/jpg/blog/blog-first.jpg"
+// BlogSectionData import Sec
+import FirstBlog from "@/../public/jpg/blog/blog-first.jpg";
 import SecondBlog from "@/../public/jpg/blog/blog-second.jpg";
 import ThirdBlog from "@/../public/jpg/blog/blog-third.jpg";
 
-export interface SwiperType{
+// SwiperData Sec
+export interface SwiperType {
   title: string;
   subtitle: string;
   link: {
@@ -20,6 +21,7 @@ export interface SwiperType{
   };
   src: StaticImageData;
 }
+
 export const SwiperData: SwiperType[] = [
   {
     title: "Baked fresh, loved by all.",
@@ -31,7 +33,7 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: FirstImg,
   },
@@ -45,7 +47,7 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: SecondImg,
   },
@@ -59,7 +61,7 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: ThirdImg,
   },
@@ -73,7 +75,7 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: FourthImg,
   },
@@ -87,7 +89,7 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: FifthImg,
   },
@@ -101,13 +103,23 @@ export const SwiperData: SwiperType[] = [
             should…`,
     link: {
       text: "Read More",
-      href: "",
+      href: "/recent-posts",
     },
     src: FifthImg,
   },
 ];
 
-export const BlogSectionData: SwiperType[] = [
+//BlogSectionData sec
+export interface BlogSectionDataType {
+  title: string;
+  subtitle: string;
+  link: {
+    text: string;
+    href: string;
+  };
+  src: StaticImageData;
+}
+export const BlogSectionData: BlogSectionDataType[] = [
   {
     title: "Baked fresh, loved by all.",
     subtitle: ` Let’s make the easiest coffee ice cream! It’s creamy and scoopable,
@@ -117,8 +129,8 @@ export const BlogSectionData: SwiperType[] = [
             superpower: ice cream without an ice cream maker. Really, this
             should…`,
     link: {
-      text: "Read More",
-      href: "",
+      text: "Learn More",
+      href: "/blog",
     },
     src: FirstBlog,
   },
@@ -131,8 +143,8 @@ export const BlogSectionData: SwiperType[] = [
             superpower: ice cream without an ice cream maker. Really, this
             should…`,
     link: {
-      text: "Read More",
-      href: "",
+      text: "Learn More",
+      href: "/blog",
     },
     src: SecondBlog,
   },
@@ -145,10 +157,9 @@ export const BlogSectionData: SwiperType[] = [
             superpower: ice cream without an ice cream maker. Really, this
             should…`,
     link: {
-      text: "Read More",
-      href: "",
+      text: "Learn More",
+      href: "/blog",
     },
     src: ThirdBlog,
   },
-
 ];

@@ -3,6 +3,7 @@
 import React from "react";
 import { BlogSectionData, SwiperData } from "./HomeData";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogSection = () => {
   return (
@@ -21,9 +22,13 @@ const BlogSection = () => {
             />
             <h1 className="text-2xl font-bold text-black">{item.title}</h1>
             <p className="text-base font-bold text-black">{item.subtitle}</p>
-            <button className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-base font-bold text-black h-16 rounded-xl flex justify-center items-center w-full">
-              Learn More
-            </button>
+            <Link
+              target="_blank"
+              href={item.link.href}
+              className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-base font-bold text-black h-16 rounded-xl flex justify-center items-center w-full"
+            >
+              {item.link.text}
+            </Link>
           </div>
         ))}
       </div>

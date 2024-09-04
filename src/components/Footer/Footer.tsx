@@ -18,6 +18,7 @@ const Footer = () => {
             <div className="flex flex-col">
               {SiteMapFooterData.map((item, index) => (
                 <Link
+                  target="_blank"
                   key={index}
                   className="text-lg font-bold hover:text-[#0818A8] text-black"
                   href={item.href}
@@ -30,14 +31,15 @@ const Footer = () => {
 
           <div className="flex flex-col gap-4 ">
             <h1 className="font-bold text-2xl text-black">CONTACT</h1>
-            <div className="flex flex-row w-full justify-start gap-4">
+            <div className="flex flex-wrap justify-start gap-4">
               {ContactFooterData.map((item, index) => (
                 <Link
+                  target="_blank"
                   key={index}
                   className="text-lg font-bold hover:border-b-2 border-[#0818A8]"
                   href={item.href}
                 >
-                  <Image className="w-14" alt="icon" src={item.src!} />
+                  <Image className="w-12" alt="icon" src={item.src!} />
                 </Link>
               ))}
             </div>
