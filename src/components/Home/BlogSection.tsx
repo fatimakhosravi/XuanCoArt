@@ -24,10 +24,10 @@ const BlogSection = () => {
             <p className="text-base font-bold text-black">{item.subtitle}</p>
             <Link
               target="_blank"
-              href={item.link.href}
+              href="/blog"
               className="bg-[#f5bb4f] hover:bg-[#e9cc98] text-base font-bold text-black h-16 rounded-xl flex justify-center items-center w-full"
             >
-              {item.link.text}
+              Learn More{" "}
             </Link>
           </div>
         ))}

@@ -6,9 +6,11 @@ import Logo from "@/../public/jpg/common/bread-farm-logo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="py-6 ">
+    <div className="py-6">
       <div className="flex flex-row justify-center gap-4 grad bg-gradient-to-r from-[#e9cf7c] bg-[#eee2ba] p-4 rounded-xl w-full shadow-md shadow-[#70695c]">
-        <Image className="w-24 rounded-md" alt="logo" src={Logo} />
+        <Link href="/home">
+          <Image className="w-24 !h-[100px] rounded-md" alt="logo" src={Logo} />
+        </Link>
         {NavbarData.map((item, index) => (
           <div
             className="flex flex-row items-center justify-center"

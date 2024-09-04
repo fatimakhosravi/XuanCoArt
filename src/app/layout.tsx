@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col px-24 gap-6`}>
+      <body className={`${inter.className} flex flex-col px-4`}>
         <Navbar />
         <main>{children}</main>
         <Footer />

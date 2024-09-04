@@ -10,8 +10,9 @@ const Footer = () => {
   return (
     <div className="py-6">
       <div className="grid grid-cols-2 items-start gap-4 grad bg-gradient-to-r from-[#fdd03d] bg-[#ebd489] p-6 rounded-xl w-full shadow-md">
-        <Image className="w-60 rounded-md" alt="logo" src={Logo} />
-
+        <Link href="/home">
+          <Image className="w-60 rounded-md" alt="logo" src={Logo} />
+        </Link>
         <div className="grid grid-cols-2">
           <div className="flex flex-col gap-4">
             <h1 className="font-bold text-2xl text-black">SITE MAP</h1>
@@ -31,12 +32,12 @@ const Footer = () => {
 
           <div className="flex flex-col gap-4 ">
             <h1 className="font-bold text-2xl text-black">CONTACT</h1>
-            <div className="flex flex-wrap justify-start gap-4">
+            <div className="flex flex-row justify-start gap-4">
               {ContactFooterData.map((item, index) => (
                 <Link
                   target="_blank"
                   key={index}
-                  className="text-lg font-bold hover:border-b-2 border-[#0818A8]"
+                  className=" text-lg font-bold hover:border-b-2 border-[#0818A8]"
                   href={item.href}
                 >
                   <Image className="w-12" alt="icon" src={item.src!} />
