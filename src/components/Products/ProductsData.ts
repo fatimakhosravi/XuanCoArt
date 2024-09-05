@@ -1,8 +1,14 @@
+// MainProductsData import sec
 import FirstImg from "@/../public/jpg/hero-sec/baguettes.jpg";
 import SecondImg from "@/../public/jpg/hero-sec/pain-complet-maison.jpg";
 import ThirdImg from "@/../public/jpg/hero-sec/pain-de-campagne.jpg";
 import FourthImg from "@/../public/jpg/hero-sec/pain-de-mie.jpg";
 import FifthImg from "@/../public/jpg/hero-sec/pain-poilâne.jpg";
+
+// OtherCommentData import sec
+import Fatima from "@/../public/jpg/about/fatima.jpg";
+
+// MainProductsData sec
 interface MainProductsData {
   name: string;
   cost: string;
@@ -42,3 +48,12 @@ export const MainProductsData = [
     description: `Description: Named after the famous Poilâne bakery in Paris, Pain Poilâne is a type of sourdough bread that has achieved international acclaim for its rich flavor and artisanal quality. This bread is made from a mix of whole wheat and white flours, giving it a dense, chewy texture and a mildly sour taste due to the natural fermentation process. The loaf is typically round and weighs around 1.5 kilograms, and its crust is dark and crisp. The interior is moist and tender, with a slightly tangy flavor that pairs well with a variety of toppings, from cheese and charcuterie to simple butter. Pain Poilâne is renowned for its deep, nutty flavor, a testament to the quality of ingredients and the traditional baking methods used.`,
   },
 ];
+
+// comment
+export interface FormComponentType {
+  src?: any;
+  name: string;
+  date: string;
+  comment: string;
+}
+

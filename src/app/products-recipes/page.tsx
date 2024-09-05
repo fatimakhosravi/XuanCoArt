@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProductsRecipe = () => {
-  return <div>page</div>;
+  return <div className="text-center text-8xl font-bold">Comming Soon</div>;
 };
 
 export default ProductsRecipe;

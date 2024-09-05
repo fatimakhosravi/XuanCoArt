@@ -9,7 +9,7 @@ import Logo from "@/../public/jpg/common/bread-farm-logo.jpg";
 const Footer = () => {
   return (
     <div className="py-6">
-      <div className="grid grid-cols-3 gap-4 grad bg-gradient-to-r from-[#f0cf62] bg-[#f0dc9a] p-6 rounded-xl w-full shadow-md">
+      <div className="grid grid-cols-3 gap-4 grad bg-gradient-to-r from-[#f7d566] bg-[#f7e5ab] p-6 rounded-xl w-full shadow-md">
         {/* logo sec */}
         <Link className="flex flex-col " href="/home">
           <Image className="w-24 rounded-md" alt="logo" src={Logo} />

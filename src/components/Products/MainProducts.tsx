@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import BackgroundImgProduc from "@/../public/jpg/products/background.jpg";
-import Baguettes from "@/../public/jpg/hero-sec/baguettes.jpg";
 import Link from "next/link";
 import { Messages2, ShoppingCart } from "iconsax-react";
 import { MainProductsData } from "./ProductsData";
@@ -9,14 +8,6 @@ import { MainProductsData } from "./ProductsData";
 const MainProducts = () => {
   return (
     <div className="flex flex-col gap-24">
-      {/* first sec */}
-      <div className="flex justify-end items-end">
-        <Image
-          className="min-w-fit opacity-50"
-          alt="background-img"
-          src={BackgroundImgProduc}
-        />
-      </div>
 
       {/* secound sec  */}
       <div className="grid grid-cols-3 justify-center gap-4">
