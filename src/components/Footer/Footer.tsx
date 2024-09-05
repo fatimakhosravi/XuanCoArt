@@ -9,11 +9,14 @@ import Logo from "@/../public/jpg/common/bread-farm-logo.jpg";
 const Footer = () => {
   return (
     <div className="py-6">
-      <div className="grid grid-cols-2 items-start gap-4 grad bg-gradient-to-r from-[#fdd03d] bg-[#ebd489] p-6 rounded-xl w-full shadow-md">
-        <Link href="/home">
-          <Image className="w-60 rounded-md" alt="logo" src={Logo} />
+      <div className="grid grid-cols-3 gap-4 grad bg-gradient-to-r from-[#f0cf62] bg-[#f0dc9a] p-6 rounded-xl w-full shadow-md">
+        {/* logo sec */}
+        <Link className="flex flex-col " href="/home">
+          <Image className="w-24 rounded-md" alt="logo" src={Logo} />
+          <p className="font-bold text-lg">XuanCoArt</p>
         </Link>
-        <div className="grid grid-cols-2">
+        {/* site map sec */}
+        <div className="grid grid-cols-2 col-span-2">
           <div className="flex flex-col gap-4">
             <h1 className="font-bold text-2xl text-black">SITE MAP</h1>
             <div className="flex flex-col">
@@ -29,7 +32,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
+          {/* contact sec */}
           <div className="flex flex-col gap-4 ">
             <h1 className="font-bold text-2xl text-black">CONTACT</h1>
             <div className="flex flex-row justify-start gap-4">

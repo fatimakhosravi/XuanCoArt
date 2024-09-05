@@ -15,13 +15,16 @@ const MainProducts = () => {
           className="min-w-fit opacity-50"
           alt="background-img"
           src={BackgroundImgProduc}
-        ></Image>
+        />
       </div>
 
       {/* secound sec  */}
       <div className="grid grid-cols-3 justify-center gap-4">
         {MainProductsData.map((item, index) => (
-          <div key={index} className="flex flex-col justify-center items-center gap-4 bg-[#16295e] rounded-xl p-4">
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center gap-4 bg-[#16295e] rounded-xl p-4"
+          >
             <Image
               className="w-[50%] rounded-xl"
               alt="bread-img"
@@ -30,15 +33,17 @@ const MainProducts = () => {
             <div className="flex flex-col gap-4">
               <div className="grid grid-cols-2 gap-4">
                 <Link
+                  target="_blank"
                   className="h-15 text-sm bg-[#f5bb4f] p-2 rounded-lg font-bold text-[#16295e] flex flex-row gap-1 items-center justify-center"
-                  href="/shao-basket"
+                  href="/shop-basket"
                 >
                   Shopping Basket
                   <ShoppingCart variant="Bold" size="18" color="#16295e" />
                 </Link>
                 <Link
+                  target="_blank"
                   className="h-15 text-sm bg-[#f5bb4f] p-2 rounded-lg font-bold text-[#16295e] flex flex-row gap-1 items-center justify-center"
-                  href="/shao-basket"
+                  href="/products/comments"
                 >
                   User Comments
                   <Messages2 variant="Bold" size="18" color="#16295e" />
