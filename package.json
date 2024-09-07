@@ -12,7 +12,7 @@
     "iconsax-react": "^0.0.8",
     "iconsax-react-native": "^0.0.8",
     "list": "^2.0.19",
-    "next": "14.2.7",
+    "next": "^14.2.8",
     "punycode": "^2.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

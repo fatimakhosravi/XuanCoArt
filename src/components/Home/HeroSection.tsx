@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <div className="flex flex-row items-center justify-center gap-4 px-6 h-full">
       {/* prev btn */}
-      <button onClick={showPrevImage} className="bg-[#9e9687] p-2 rounded-md ">
+      <button onClick={showPrevImage} className="bg-[#eee2ba] hover:bg-[#f5bb4f] p-2 rounded-md ">
         <ArrowLeft2 variant="Bold" size="24" color="#000000" />
       </button>
 
@@ -51,7 +51,10 @@ const HeroSection = () => {
         </div>
       </div>
       {/* next btn */}
-      <button onClick={handleNext} className="bg-[#9e9687] p-2 rounded-md ">
+      <button
+        onClick={handleNext}
+        className="bg-[#eee2ba] hover:bg-[#f5bb4f] p-2 rounded-md "
+      >
         <ArrowRight2 variant="Bold" size="24" color="#000000" />
       </button>
     </div>
