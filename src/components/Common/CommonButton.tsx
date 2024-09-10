@@ -1,25 +1,23 @@
-import { CommonLinkProps } from "@/interface/Common/CommonInterface";
-import Link from "next/link";
+import { CommonButtonProps } from "@/interface/Common/CommonButtonInterface";
 import React, { FC } from "react";
 
-const CommonLink: FC<CommonLinkProps> = ({
+const CommonButton: FC<CommonButtonProps> = ({
   class_name,
-  href,
-  text_link,
+  text_button,
   icon,
+  on_click,
 }) => {
   return (
     <div className="w-full">
-      <Link
-        target="_blank"
-        href={href}
+      <button
+        onClick={on_click}
         className={`${class_name} gap-1 rounded-lg bg-[#f5bb4f] hover:bg-[#e9cc98] text-xl font-bold text-black flex flex-row justify-center items-center`}
       >
         {icon}
-        {text_link}
-      </Link>
+        {text_button}
+      </button>
     </div>
   );
 };
 
-export default CommonLink;
+export default CommonButton;

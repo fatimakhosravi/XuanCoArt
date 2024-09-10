@@ -1,7 +1,7 @@
 import React from "react";
 
-const ProductsRecipe = () => {
+const About = () => {
   return <div className="text-center text-8xl font-bold">Comming Soon</div>;
 };
 
-export default ProductsRecipe;
+export default About;

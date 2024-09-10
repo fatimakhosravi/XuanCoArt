@@ -13,16 +13,16 @@ interface FooterDataType {
 }
 
 export const SiteMapFooterData: FooterDataType[] = [
+  // {
+  //   link_name: "Recent Post",
+  //   href: "/recent-posts",
+  // },
   {
-    link_name: "Recent Post",
-    href: "/recent-posts",
-  },
-  {
-    link_name: "All Breads",
+    link_name: "All Products",
     href: "/products",
   },
   {
-    link_name: "All Recipes",
+    link_name: "About",
     href: "/products-recipes",
   },
 
@@ -57,5 +57,4 @@ export const ContactFooterData: FooterDataType[] = [
     href: "https://github.com/fatimakhosravi",
     src: GitHub,
   },
-
 ];
