@@ -18,7 +18,7 @@ const SignUpForm: FC = () => {
       />
       {/* form sec */}
       <div className="w-[100%] h-[100%] rounded-tr-xl rounded-br-xl grid col-start-2 items-center col-span-1 bg-[#16295e] p-4">
-        <form className="grid gap-6">
+        <form action={""} className="grid gap-6">
           <div className="text-center">
             <h1 className="font-bold text-4xl text-[#f5bb4f]">SignUp</h1>
           </div>
